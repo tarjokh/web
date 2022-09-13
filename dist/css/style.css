@@ -1,0 +1,8 @@
+.no-webp body {
+  background: url("../img/images.jpg"); }
+
+body span {
+  color: red;
+}
+
+.webp body { background: url(../img/images.webp); }

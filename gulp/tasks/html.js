@@ -13,9 +13,16 @@ export const html = () => {
     )
     .pipe(fileinclude())
     .pipe(app.plugins.replace(/img\//g, '/img'))
-    .pipe(webpHtmlNosvg())
     .pipe(
-        versionNumber({
+        app.plugins.if(
+            app.isBuild,
+            webpHtmlNosvg()
+        )
+    )
+    .pipe(
+        app.plugins.if(
+            app.isBuild,
+            versionNumber({
             'value': '%DT%',
             'append': {
                 'key': '_v',
@@ -30,9 +37,8 @@ export const html = () => {
                 'file': 'gulp/version.json'
             }
         })
+      )
     )
      .pipe(app.gulp.dest(app.path.build.html))
      .pipe(app.plugins.browsersync.stream());
-    }
-
-    
+}

@@ -1,1 +1,28 @@
-.no-webp body{background:url(../img/images.jpg)}body span{color:red}.webp body{background:url(../img/images.webp)}
+@font-face {
+  font-family: 16020_FUTURAM;
+  font-display: swap;
+  src: url("../fonts/16020_FUTURAM.woff2") format("woff2"), url("../fonts/16020_FUTURAM.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Nautilus;
+  font-display: swap;
+  src: url("../fonts/Nautilus.woff2") format("woff2"), url("../fonts/Nautilus.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Intro;
+  font-display: swap;
+  src: url("../fonts/Intro.woff2") format("woff2"), url("../fonts/Intro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: 16020_FUTURAM;
+  font-size: 50px;
+}
+body span {
+  color: red;
+}

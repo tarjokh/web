@@ -1,9 +1,39 @@
-@import "fonts";
-body {
-    font-family: 16020_FUTURAM;
-    font-size: 50px;
-    span {
-        color: red;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-    }
+body {
+    background-color: #E9EEF2;
+    font-family: "Open+Sans";
+    font-weight: 300;
+    font-size: 16px;
+    color: #494949;
+
+    -webkit-font-smoothing: antialisade;
+    -webkit-overflow-scrolling: touch;
+
+    margin-top: 70px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Open+Sans";
+    font-weight: 300;
+    color: #494949;
+}
+
+p{
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+a{
+    color: #2e63df;
+}
+
+a:hover, a:focus {
+    color: #F96E20;
+    text-decoration: none;
+    outline: 0;
 }

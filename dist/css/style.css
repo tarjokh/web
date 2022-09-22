@@ -1,28 +1,36 @@
-@font-face {
-  font-family: 16020_FUTURAM;
-  font-display: swap;
-  src: url("../fonts/16020_FUTURAM.woff2") format("woff2"), url("../fonts/16020_FUTURAM.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: Nautilus;
-  font-display: swap;
-  src: url("../fonts/Nautilus.woff2") format("woff2"), url("../fonts/Nautilus.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: Intro;
-  font-display: swap;
-  src: url("../fonts/Intro.woff2") format("woff2"), url("../fonts/Intro.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 body {
-  font-family: 16020_FUTURAM;
-  font-size: 50px;
+  background-color: #E9EEF2;
+  font-family: "Open+Sans";
+  font-weight: 300;
+  font-size: 16px;
+  color: #494949;
+  -webkit-font-smoothing: antialisade;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 70px;
 }
-body span {
-  color: red;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open+Sans";
+  font-weight: 300;
+  color: #494949;
+}
+
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.centered {
+  text-align: center;
+}
+
+a {
+  color: #2e63df;
+}
+
+a:hover, a:focus {
+  color: #F96E20;
+  text-decoration: none;
+  outline: 0;
 }

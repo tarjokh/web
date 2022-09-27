@@ -1,36 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-body {
-  background-color: #E9EEF2;
-  font-family: "Open+Sans";
-  font-weight: 300;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
-  color: #494949;
-  -webkit-font-smoothing: antialisade;
-  -webkit-overflow-scrolling: touch;
-  margin-top: 70px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open+Sans";
-  font-weight: 300;
+  font-size: inherit;
+}
+
+input, button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+body {
+  background-color: #E9EEF2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-left: 15px;
+}
+
+.nav {
+  padding-top: 352px;
+  padding-bottom: 1807px;
+  padding-left: 101px;
+  padding-right: 102px;
+}
+
+.nav__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+.navigation-list img {
+  margin-right: 8px;
+}
+.navigation-list ul {
+  display: flex;
+}
+.navigation-list li {
+  margin-right: 200px;
+}
+.navigation-list li:last-child {
+  margin-right: 0;
+}
+.navigation-list a {
   color: #494949;
-}
-
-p {
-  line-height: 28px;
-  margin-bottom: 25px;
-}
-
-.centered {
-  text-align: center;
-}
-
-a {
-  color: #2e63df;
-}
-
-a:hover, a:focus {
-  color: #F96E20;
   text-decoration: none;
-  outline: 0;
+}
+.navigation-list a.active, .navigation-list a:hover {
+  color: #F96E20;
+  font-weight: 700;
 }

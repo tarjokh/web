@@ -6,28 +6,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <title>@@title</title>
 </head>
 
+
+
 <body>
-    <nav class="nav">
+    
+    <logo>
+        <div class="logo">
+            <div class="container">
+                <div class="logo_row">
+                    <div class="logo__text"></div>
+                    <h1 class="logo__title">Merry Christmas</h1>
+                    <p>Free Dashboard UI kit by:</p>
+                </div>
+                    <div class="logo__img">
+                        <img src="@img/images.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </logo>
+
+
+
+    <nav class="nav"> 
         <div class="container">
            <div class="nav__row">
             <div class="navigation-list">
             <ul>
-                <img src="@img/DashboardPNG.png">
-                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Dashboard</a></li>
                 <img src="@img/Dashboard.svg">
                 <li><a href="#"> Settings</a></li>
-                <img src="@img/Dashboard.svg">
+                <img src="@img/Settings.svg">
                 <li><a href="#"> Calendar</a></li>
-                <img src="@img/Dashboard.svg">
+                <img src="@img/Calendar.svg">
                 <li><a href="#"> Message</a></li>
-                <img src="@img/Dashboard.svg">
-                <li><a href="#"> Fabric</a></li>
+                <img src="@img/message.svg">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active"  id="navDrop" role="button" data-toggle="dropdown" aria-expanded="false"
+                    >Fabric</a>
+    
+                    <!-- <ul class="dropdown-menu" aria-labelledby="navDrop"> -->
+                        <!-- <li><a href="" class="dropdown-item">Drop1</a></li>
+                        <li><a href="" class="dropdown-item">Drop2</a></li>
+                        <li><a href="" class="dropdown-item">Drop3</a></li>  -->
+                        
+                    </ul>
+                </li>
             </ul>
            </div>
         </div>
     </nav>
+
 </body>

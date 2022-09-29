@@ -1,8 +1,5 @@
 //Reset
-@import"./_reset";
-//Base 
-@import "./base.scss";
+@import"./_reset.scss";
 //BLOCKS
-@import"./_nav";
-@import"./_dash"; 
-@import"./_logo";
+@import"./_logo.scss";
+@import"./_nav.scss";

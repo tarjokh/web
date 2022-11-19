@@ -5,11 +5,10 @@ const weather = () => {
         .then(function (resp) { return resp.json()})
         .then(function (data) {
             console.log(data);
-            // document.querySelector('.celcium').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
-            // document.querySelector('.w_img').innerHTML = '<img src="https://openweathermap.org/img/wn/' + data.weather[0]['icon'] + '@2x.png">';
+             document.querySelector('.celcium').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
+             document.querySelector('.w_img').innerHTML = '<img src="https://openweathermap.org/img/wn/' + data.weather[0]['icon'] + '@2x.png">';
         })
         .catch(function () {
-
         })
 }
 

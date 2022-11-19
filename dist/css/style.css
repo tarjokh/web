@@ -1,5 +1,5 @@
 .body {
-  background-color: #E9EEF2;
+  background-color: #799ebc;
 }
 
 .container {
@@ -8,7 +8,6 @@
 }
 
 .logo {
-  background-color: #E9EEF2;
   height: 194px;
   width: 96px;
   position: relative;
@@ -17,7 +16,7 @@
 }
 
 .circle {
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -41,18 +40,19 @@
 }
 
 .line {
-  width: 200px;
+  width: 89px;
   height: 10px;
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   position: absolute;
-  left: 50%;
+  left: 69%;
+  margin-left: -18px;
   transform: translate(-50%);
-  margin-top: 87px;
+  margin-top: 88px;
   border-radius: 15%;
 }
 
 .beard {
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   width: 78px;
   height: 110px;
   left: 50%;
@@ -111,7 +111,6 @@
 }
 
 .MCh {
-  background-color: #E9EEF2;
   font-family: "Open Sans";
   font-size: 48px;
   color: #596268;
@@ -120,7 +119,6 @@
 }
 
 .UI {
-  background-color: #E9EEF2;
   font-family: "Open Sans";
   font-size: 22px;
   color: #B5BDC2;
@@ -376,7 +374,7 @@
   height: 70px;
   width: 300px;
   margin-left: 840px;
-  margin-top: -300px;
+  margin-top: 60px;
 }
 
 .load_text {
@@ -435,8 +433,8 @@
 #graph {
   height: 0px;
   width: 0px;
-  margin-left: 500px;
-  margin-top: -127px;
+  margin-left: 510px;
+  margin-top: -370px;
 }
 
 #graph img {
@@ -448,7 +446,7 @@
   height: 150px;
   position: absolute;
   margin-left: 20px;
-  margin-top: -300px;
+  margin-top: -250px;
   background: rgb(247, 173, 25);
   border-radius: -50%;
 }
@@ -467,7 +465,7 @@
 .social {
   height: 106px;
   width: 300px;
-  margin-top: 100px;
+  margin-top: -40px;
   margin-left: 840px;
 }
 
@@ -589,18 +587,17 @@
 
 .sign_in p {
   position: absolute;
-  margin-top: 241px;
+  margin-top: 221px;
   font-size: large;
   font-family: "Open Sans", sans-serif;
   font-size: 11px;
   margin-left: 276px;
-  background-color: #E9EEF2;
   color: rgb(0, 0, 0);
 }
 
 .sign_in span {
   font-family: "Open Sans", sans-serif;
-  margin-top: 35px;
+  margin-top: 3px;
   position: absolute;
   color: black;
   margin-left: 74px;
@@ -656,7 +653,8 @@
 .date_weather {
   width: 300px;
   height: 96px;
-  margin-top: -96px;
+  margin-top: -90px;
+  margin-left: 178px;
 }
 
 .date_weather:before {
@@ -664,7 +662,7 @@
   height: 96px;
   width: 300px;
   position: absolute;
-  background-color: rgb(8, 7, 7);
+  background-image: linear-gradient(#E9EEF2, #E9EEF2);
   border-radius: 10px;
 }
 
@@ -697,14 +695,14 @@
   font-size: 60px;
 }
 
-.line {
+.line_2 {
   position: absolute;
   width: 47px;
   transform: rotate(90deg);
-  background-color: #E9EEF2;
+  background-color: #ffffff;
   height: 1px;
-  margin-top: 40px;
-  margin-left: -130px;
+  margin-top: 50px;
+  margin-left: 180px;
 }
 
 .w_img {
@@ -717,7 +715,7 @@
   height: 288px;
   width: 624px;
   margin-top: 24px;
-  margin-left: 530px;
+  margin-left: 510px;
 }
 
 .bacon_ipsum {
@@ -745,6 +743,11 @@
   margin-top: 70px;
   font-size: 60px;
   color: #ffffff;
+}
+
+.icon_bacone img {
+  width: 247px;
+  margin-left: -95px;
 }
 
 .admin span {
@@ -820,6 +823,63 @@
   background-clip: content-box, border-box;
   border-radius: 10px;
   background-color: #E9EEF2;
+}
+
+.stars img {
+  width: 150px;
+  margin-left: 156px;
+  margin-top: -48px;
+}
+
+.sho img {
+  width: 300px;
+  margin-top: -270px;
+  margin-left: -190px;
+}
+
+.music-left img {
+  margin-left: 500px;
+  margin-top: -500px;
+}
+
+.music-player img {
+  margin-left: 322px;
+  margin-top: -330px;
+}
+
+.music-right img {
+  margin-left: 500px;
+  margin-top: -750px;
+}
+
+.music-rand img {
+  margin-left: 500px;
+  margin-top: -677px;
+}
+
+.music-rep img {
+  margin-left: 647px;
+  margin-top: -677px;
+}
+
+.music-sound img {
+  margin-left: 170px;
+  margin-top: -700px;
+}
+
+.music-sett img {
+  margin-left: 418px;
+  margin-top: -700px;
+}
+
+.material-icons img {
+  margin-left: 218px;
+  margin-top: -10px;
+}
+
+.material-out img {
+  margin-left: 250px;
+  margin-top: -10px;
 }
 
 .contact_us p {
@@ -1121,7 +1181,7 @@
   width: 300px;
   height: 250px;
   margin-top: -620px;
-  margin-left: 530px;
+  margin-left: 510px;
 }
 
 .calendar:before {
@@ -1259,7 +1319,7 @@
   width: 300px;
   height: 120px;
   margin-top: 24px;
-  margin-left: 530px;
+  margin-left: 510px;
 }
 
 .clock::before {
@@ -1333,6 +1393,11 @@
   height: 15px;
 }
 
+.map2 img {
+  width: 80px;
+  margin-top: -10px;
+}
+
 .map-text {
   font-family: "Open Sans", sans-serif;
   margin-top: 20px;
@@ -1359,7 +1424,6 @@
   background-image: linear-gradient(180deg, rgb(252, 142, 38) 0%, rgb(249, 78, 85) 100%);
   background-size: 100%;
   background-repeat: repeat;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 90px;
 }
@@ -1374,7 +1438,7 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   margin-top: 112px;
-  margin-left: 530px;
+  margin-left: 510px;
   border-top: 6px solid transparent;
   background-image: linear-gradient(white, #E9EEF2), linear-gradient(to right, rgb(250, 173, 22), rgb(250, 103, 82));
   background-origin: border-box;
@@ -1484,13 +1548,13 @@
 }
 
 .chat-mate {
-  background-color: #cde3f5;
+  background-color: #ececec;
   position: absolute;
   height: 44px;
   width: 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  border-bottom: 1px solid rgba(119, 119, 119, 0.4666666667);
+  border-bottom: 5px solid #fb7b41;
   z-index: 2;
 }
 
@@ -1500,7 +1564,7 @@
   border-radius: 50%;
   background-color: #00ff00;
   margin-left: 270px;
-  margin-top: -12px;
+  margin-top: -3px;
 }
 
 .chat-first-element {
@@ -1717,12 +1781,12 @@ textarea:focus {
 
 .shipment {
   position: absolute;
-  margin-left: 530px;
+  margin-left: 510px;
   height: 130px;
   width: 300px;
   position: absolute;
   margin-top: 425px;
-  background-image: linear-gradient(white, #E9EEF2), linear-gradient(to right, rgb(250, 103, 82), rgb(250, 173, 22));
+  background-image: linear-gradient(#E9EEF2, #E9EEF2), linear-gradient(to right, rgb(250, 103, 82), rgb(250, 173, 22));
   border-radius: 10px;
 }
 

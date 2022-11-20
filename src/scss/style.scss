@@ -1,11 +1,3 @@
-.body{
-	background-color: #799ebc;
-}
-.container {
-	width: 948px;
-	margin: auto;
-}
-
 .logo {
 	
 	height: 194px;
@@ -125,7 +117,10 @@
 	text-align: center;
 	padding-top: 10px;
 }
-
+.clockk img{
+	margin-left: 25px;
+	margin-top: 20px;
+}
 .Layer1{
     margin-left: 600px;
 	padding-top: 10px;
@@ -1003,10 +998,23 @@
 	margin-left: 150px;
 	font-size: 30px;
 }
+.user2 img{
+	margin-top: 0px;
+	margin-left: -7px;
+}
+.user3 img{
+	margin-top: -10px;
+	margin-left: 0px;
+}
+.user4 img{
+	margin-top: -10px;
+	margin-left: -3px;
+}
 
 .user3 span {
 	color: #fb874a;
 }
+
 
 .user1 p,
 .user2 p,
@@ -1014,7 +1022,7 @@
 .user4 p{
 	position: absolute;
 	margin-left: 50px;
-	margin-top: -45px;
+	margin-top: -50px;
 	font-family: 'Open Sans', sans-serif;
 }
 

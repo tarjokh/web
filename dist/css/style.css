@@ -374,7 +374,7 @@
   height: 70px;
   width: 300px;
   margin-left: 840px;
-  margin-top: 60px;
+  margin-top: -400px;
 }
 
 .load_text {
@@ -430,15 +430,11 @@
   background: linear-gradient(90deg, rgb(247, 173, 25) 0%, rgb(251, 107, 85) 100%);
 }
 
-#graph {
-  height: 0px;
-  width: 0px;
-  margin-left: 510px;
-  margin-top: -370px;
-}
-
-#graph img {
+.graph img {
   border-radius: 10px;
+  margin-left: 530px;
+  margin-top: -320px;
+  width: 260px;
 }
 
 .load2 {
@@ -676,21 +672,22 @@
   margin-top: 13px;
   margin-left: 20px;
   font-size: 30px;
-  color: #ffffff;
+  color: #090909;
 }
 
 #day_month {
   margin-top: 50px;
   margin-left: 30px;
   font-size: 15px;
-  color: #ffffff;
+  color: #060606;
 }
 
 .celcium {
   width: 100px;
+  height: 40px;
   font-family: "Open Sans", sans-serif;
-  color: #ffffff;
-  margin-top: 100px;
+  color: #FA5F48;
+  margin-top: 0px;
   margin-left: 95px;
   font-size: 60px;
 }
@@ -707,8 +704,10 @@
 
 .w_img {
   position: absolute;
-  margin-top: 19px;
-  margin-left: 400px;
+  margin-top: 0px;
+  margin-left: 200px;
+  width: 40px;
+  height: 40px;
 }
 
 .bacon_ipsum {
@@ -1262,6 +1261,7 @@
   width: 300px;
   height: 16px;
   margin-left: 15px;
+  margin-top: -15px;
   display: flex;
 }
 
@@ -1274,26 +1274,25 @@
 }
 
 .days div {
-  width: 16px;
-  height: 16px;
+  height: 28px;
   font-size: 15px;
-  padding: 5px;
-  margin-left: 15px;
+  padding: 10px;
+  margin-left: 10px;
   float: left;
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
 
 .weekdays-container {
-  width: 300px;
   height: 16px;
   padding-top: 60px;
   padding-bottom: 6px;
+  margin-left: 10px;
 }
 
 .days-container {
   position: absolute;
-  width: 248px;
+  width: 300px;
   height: 140px;
   margin-top: 50px;
   padding-top: 50px;
@@ -1351,7 +1350,7 @@
   margin-left: 150px;
   margin-top: -110px;
   font-size: 50px;
-  color: #fb723b;
+  color: #000000;
 }
 
 .blog_time1 {
@@ -1359,7 +1358,7 @@
   font-size: 15px;
   margin-left: 150px;
   margin-top: -50px;
-  color: #9a9a9a;
+  color: #010101;
 }
 
 .map {

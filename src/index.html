@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">      
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Головна</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 </head>
 <body>   
     <div class="container">
@@ -84,8 +85,8 @@
                   </div>
               </div>
            </div>
-           <div id="graph">
-              <img src="@img/Graph.png" >    
+           <div class="graph">
+              <img src="@img/Graaph.jpg" >    
            </div>
            <div id="loading">
               <div class="load_1">
@@ -137,7 +138,19 @@
                <p class="celcium"></p>
                <div class="line_2"></div>
                <div class="w_img"></div>
+               <script>
+                fetch('https://api.openweathermap.org/data/2.5/weather?id=702550&appid=bbb8eda2dcab920b23258aace83a56d5')
+                    .then(function (resp) { return resp.json()})
+                    .then(function (data) {
+                        console.log(data);
+                         document.querySelector('.celcium').innerHTML = Math.round(data.main.temp - 273) + '&deg;';
+                         document.querySelector('.w_img').innerHTML = '<img src="http://openweathermap.org/img/wn/' + data.weather[0]['icon'] + '@2x.png">';
+                    })
+                    .catch(function () {
+                    })
+            </script>
            </div>
+
            <div class="bacon_ipsum">
                <div class="bacon_ipsum_img">
                    <span class="icon_bacone"><img src="@img/Bacone.jpg"></span>
@@ -249,7 +262,88 @@
                     </div>
                     <div class="days-cointainer">
                         <div class="days"></div>
-                    </div>    
+                    </div>   
+                    <script>const date = new Date();
+
+                        const renderCalendar = () => {
+                            date.setDate(1);
+                        
+                            const monthDays = document.querySelector(".days");
+                        
+                            const lastDay = new Date(
+                                date.getFullYear(),
+                                date.getMonth() + 1,
+                                0
+                            ).getDate();
+                        
+                            const prevLastDay = new Date(
+                                date.getFullYear(),
+                                date.getMonth(),
+                                0
+                            ).getDate();
+                        
+                            const firstDayIndex = date.getDay();
+                        
+                            const lastDayIndex = new Date(
+                                date.getFullYear(),
+                                date.getMonth() + 1,
+                                0
+                            ).getDay();
+                        
+                            const nextDays = 7 - lastDayIndex - 1;
+                        
+                            const months = [
+                                "January",
+                                "February",
+                                "March",
+                                "April",
+                                "May",
+                                "June",
+                                "July",
+                                "August",
+                                "September",
+                                "October",
+                                "November",
+                                "December",
+                            ];
+                        
+                            document.querySelector(".date").innerHTML = months[date.getMonth()];
+                        
+                        
+                            let days = "";
+                        
+                            for (let x = firstDayIndex; x > 0; x--) {
+                                days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
+                            }
+                        
+                            for (let i = 1; i <= lastDay; i++) {
+                                if (
+                                    i === new Date().getDate() &&
+                                    date.getMonth() === new Date().getMonth()
+                                ) {
+                                    days += `<div class="today">${i}</div>`;
+                                } else {
+                                    days += `<div>${i}</div>`;
+                                }
+                            }
+                        
+                            for (let j = 1; j <= nextDays; j++) {
+                                days += `<div class="next-date">${j}</div>`;
+                                monthDays.innerHTML = days;
+                            }
+                        };
+                        
+                        document.querySelector(".prev").addEventListener("click", () => {
+                            date.setMonth(date.getMonth() - 1);
+                            renderCalendar();
+                        });
+                        
+                        document.querySelector(".next").addEventListener("click", () => {
+                            date.setMonth(date.getMonth() + 1);
+                            renderCalendar();
+                        });
+                        
+                        renderCalendar();</script> 
             </div>
             <div class="clock">
                 <div class="left-clock-side">
@@ -259,6 +353,43 @@
                     <p class="blog_time"></p>
                     <p class="blog_time1"></p>
                 </div>
+                <script>
+                      let day = date1.getDate();
+    let month = date1.getMonth()+1;
+    let day1 = date1.getDay();
+                    const months1 = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+];
+    let hours=date1.getHours();
+    let minutes=date1.getMinutes();
+
+    
+    let k='';
+    if ((k+minutes).length==1){
+        k='0'+minutes;
+    }
+    else {
+        k=minutes
+    }
+
+    p1.innerHTML = day2;
+    p2.innerHTML = day + ' / ' + month;
+    document.querySelector(".blog_time1").innerHTML = months1[date1.getMonth()] +', ' + date1.getDate() + ', '+ date1.getFullYear();
+    document.querySelector(".blog_time").innerHTML=hours +  ':' + k;
+    document.querySelector(".right-clock-side p").innerHTML=hours +  ':' + k;
+
+                </script>
             </div>
             <div class="map">
                 <img src="@img/map.jpg">
@@ -329,6 +460,6 @@
             </div>
         </div>
     </div>
-    <script src="/src/htmm.js"></script>
+
 </body>
 </html>
